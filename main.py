@@ -80,3 +80,7 @@ def sign_request(ts, body, recv_window):
 if __name__ == '__main__':
     app.run()
 
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
+
+
