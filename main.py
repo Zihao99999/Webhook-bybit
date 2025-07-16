@@ -76,3 +76,7 @@ def place_order(order_data):
 def sign_request(ts, body, recv_window):
     message = f"{ts}{API_KEY}{recv_window}{body}"
     return hmac.new(bytes(API_SECRET, "utf-8"), bytes(message, "utf-8"), hashlib.sha256).hexdigest()
+
+if __name__ == '__main__':
+    app.run()
+
